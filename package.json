@@ -1,0 +1,11 @@
+{
+  "name": "cf-cors-proxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "y0za",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}
