@@ -5,6 +5,11 @@ exports.proxy = (req, res) => {
     'Access-Control-Allow-Origin': '*'
   });
 
+  if (req.method !== 'GET') {
+    res.status(405).send();
+    return;
+  }
+
   const url = req.query.url;
   if (url == null) {
     res.status(401).send();
